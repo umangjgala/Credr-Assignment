@@ -1,0 +1,292 @@
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Verdana, sans-serif;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        position: relative;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:
+            linear-gradient(to bottom right, #682381 50%, transparent 50.5%) no-repeat bottom,
+            linear-gradient(0deg, #682381, #2e1e4d) no-repeat top;
+        background-size: 100% 11em, 100% calc(100% - 11em);
+    }
+
+    .container .welcomeData {
+        width: 50%;
+        margin: 20px;
+    }
+
+    .container .welcomeData .information h2 {
+        color: white;
+    }
+
+    .container .welcomeData .information h3 {
+        color: white;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .container .list {
+        color: white;
+        margin-top: 30px;
+        border: 1.6px dashed white;
+        border-radius: 5px;
+        width: 50%;
+        padding: 10px;
+        position: relative;
+        display: flex;
+    }
+
+    .container .list .listBtn {
+        background-color: white;
+        width: 150px;
+        height: 30px;
+        color: #da2128;
+        border: none;
+        font-weight: 1000;
+        font-size: x-small;
+        position: absolute;
+        transform: translate(1px, -26px);
+        align-items: center;
+    }
+
+    .container .list li {
+        margin: 15px;
+        list-style-type: circle;
+    }
+
+    .container .formBox {
+        width: 20%;
+        background-color: white;
+        padding: 30px;
+        margin-top: 150px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: gray;
+    }
+
+    .container .formBox .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .form .inputBox {
+        position: relative;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .container .form .inputBoxBtn {
+        position: relative;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+
+    .container .form .heading {
+        margin-bottom: 0;
+    }
+
+    .container .form .inputBox input {
+        width: 100%;
+        height: 50px;
+        border-radius: 2px;
+        border-left: none;
+    }
+
+    .container .form .inputBoxBtn input {
+        width: 100%;
+        height: 50px;
+        border-radius: 2px;
+    }
+
+    .container .form .inputBox .select {
+        width: 100%;
+        height: 50px;
+        border-left: none;
+        color: gray;
+    }
+
+    .container .form .inputBox .label {
+        position: absolute;
+        left: 0;
+        transform: translate(11px, -11px);
+        background-color: white;
+        font-size: x-small;
+        padding: 5px;
+    }
+
+    .container .form .inputBoxBtn .btn {
+        margin-bottom: 70px;
+        background-color: #da2128;
+        border: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    .section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .section .vehicleInfo {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .section .vehicleInfo .info1 {
+        margin: 20px;
+
+    }
+
+    .section .vehicleInfo .info1 h3 {
+        margin-top: 20px;
+    }
+
+    .section .vehicleInfo .info1 h4 {
+        margin-top: 20px;
+    }
+
+    .section .vehicleInfo .info1 .p1 {
+        margin-top: 20px;
+        color: gray;
+    }
+
+    .section .vehicleInfo .info1 .p2 {
+        margin-top: 20px;
+        color: gray;
+        font-size: medium;
+
+    }
+
+    .section .vehicleInfo .image {
+        width: 50%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f7fd;
+        width: 100%;
+    }
+
+    .footer .footerHeader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .footer .footerHeader h3 {
+        margin-top: 20px;
+    }
+
+    .footer .footerHeader h5 {
+        margin-top: 20px;
+        color: gray;
+    }
+
+    .footer .footerList {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    .footer .footerList .list1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .footerList .list2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .footerList .subList {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .footer .footerList .subList .numberList {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        border-radius: 50%;
+        font-size: 30px;
+        text-align: center;
+        background: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+
+    .footer .footerList .subList .textList {
+        margin: 20PX;
+    }
+
+    @media (min-width:300px) and (max-width: 991px) {
+        .container {
+            width: 100%;
+            flex-direction: column;
+            background: linear-gradient(to left, #682381, #2e1e4d);
+        }
+
+        .container .welcomeData {
+            width: 100%;
+
+        }
+
+        .container .information {
+            width: 85%;
+            padding: 20px;
+        }
+
+        .container .list {
+            margin: 20px;
+            width: 85%;
+        }
+
+        .container .formBox {
+            width: 70%;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            margin-top: 0;
+            flex-direction: column;
+        }
+
+        .section .vehicleInfo {
+            width: 100%;
+        }
+
+        .section .vehicleInfo .info1 {
+            margin-top: 0px;
+        }
+
+        .footer .footerList {
+            flex-direction: column;
+        }
+    }
